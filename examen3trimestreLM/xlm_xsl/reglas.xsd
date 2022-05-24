@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="tiempo">
+    <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+    </xs:simpleType>
+     
+        <xs:element name="comunidadAutonoma">
+            <xs:simpleType>
+        <xs:restriction base="xs:string"/>
+        </xs:simpleType>
+
+        <xs:element name="provincia" type="xs:string">
+
+        <xs:element name="poblacion">
+
+        <xs:complexType> <!-- inicio complexType poblacion  -->
+          <xs:sequence>  <!-- inicio secuence poblacion  -->
+
+            <!-- FECHA  -->
+            <xs:element name="fecha" type="xs:date"/>
+
+            <!-- TEMP_MAX  -->
+            <xs:element name="tempMax" type="xs:decimal"/>
+
+            <!-- TEMP_MIN  -->
+            <xs:element name="tempMin" type="xs:decimal"/>
+
+            <!-- PROB_LLUV  -->
+            <xs:element name="probLluv" type="xs:decimal"/>
+
+            <!-- AVISO_RIESGO  -->
+            <xs:element name="avisoRiesgo" minOccurs="0" maxOccurs="10">
+            <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                  <xs:pattern value="viento|nieve|tormentas|huracan"/>
+                  </xs:restriction>
+            </xs:simpleType>
+            </xs:element>
+
+
+          </xs:sequence>  <!-- final secuence  -->
+        </xs:complexType> <!-- final complexType   -->
+    </xs:element>
+</xs:element>
+</xs:element>
+</xs:element>
+</xs:schema>
+
+<!--
+<xs:attribute name="nombreP" type="xs:string" use="optional"/>
+        </xs:complexType>
+
+        <xs:attribute name="nombreCM" type="xs:string" use="required"/> 
+    
+    <xs:attribute name="nombreCM" use="optional">
+              <xs:simpleType>
+                <xs:restriction base="xs:string"></xs:restriction>
+              </xs:simpleType>
+          </xs:attribute>-->
