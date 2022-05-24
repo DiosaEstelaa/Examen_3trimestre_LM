@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- inicio tiempo -->
+
+<tiempo orderid="889923"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="reglas.xsd">
+
+<!--<comunidades autonomas>-->
+    <comunidadAutonoma nombre="Comunidad de Madrid">
+        <provincia>
+            <poblacion nombre="Alcobendas">
+            <!--  -->
+              <fecha>2022/05/24</fecha>
+              <tempMax>24.0</tempMax>
+              <tempMin>9.0</tempMin>
+              <probLluv>20.0</probLluv>
+              <avisoRiesgo> </avisoRiesgo>
+            </poblacion>
+        </provincia>
+    </comunidadAutonoma>
+    
+
+</tiempo> <!-- fin tiempo -->
