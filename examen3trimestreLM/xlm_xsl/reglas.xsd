@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-<xs:element name="tiempo">
-    <xs:simpleType>
-        <xs:restriction base="xs:string"/>
-    </xs:simpleType>
-     
-        <xs:element name="comunidadAutonoma">
-            <xs:simpleType>
-        <xs:restriction base="xs:string"/>
-        </xs:simpleType>
+<xs:element name="tiempo" type="xs:string"/>
 
-        <xs:element name="provincia" type="xs:string">
+        <xs:element name="comunidadAutonoma" type="xs:string"/>
+
+
+        <xs:element name="provincia" type="xs:string"/>
+
 
         <xs:element name="poblacion">
 
@@ -43,9 +39,8 @@
           </xs:sequence>  <!-- final secuence  -->
         </xs:complexType> <!-- final complexType   -->
     </xs:element>
-</xs:element>
-</xs:element>
-</xs:element>
+
+    
 </xs:schema>
 
 <!--
