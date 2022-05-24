@@ -2,20 +2,29 @@
 
 <!-- inicio tiempo -->
 
-<tiempo orderid="889923"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<tiempo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:noNamespaceSchemaLocation="reglas.xsd">
 
 <!--<comunidades autonomas>-->
-    <comunidadAutonoma nombre="Comunidad de Madrid">
+    <comunidadAutonoma >
         <provincia>
-            <poblacion nombre="Alcobendas">
-            <!--  -->
+            <poblacion>
+            
+            <prediccion>
               <fecha>2022/05/24</fecha>
               <tempMax>24.0</tempMax>
               <tempMin>9.0</tempMin>
               <probLluv>20.0</probLluv>
-              <avisoRiesgo> </avisoRiesgo>
+              <avisoRiesgo>viento</avisoRiesgo>
+            </prediccion>
+
+            <prediccion>
+                <fecha>2022/05/23</fecha>
+                <tempMax>21.0</tempMax>
+                <tempMin>9.0</tempMin>
+                <probLluv>45.0</probLluv>
+                <avisoRiesgo>viento,lluvia</avisoRiesgo>
+              </prediccion>
             </poblacion>
         </provincia>
     </comunidadAutonoma>
